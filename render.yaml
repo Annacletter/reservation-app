@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: innreserve
+    env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    staticPublishPath: /build
+    branch: main
+    autoDeploy: true
+    prerender: true
+
+autoDeploy:
+  branches:
+    production:
+      autoDeploy: true
+    preview:
+      autoDeploy: true
+
+preview:
+  pr:
+    autoDeploy: true
+    branch: preview

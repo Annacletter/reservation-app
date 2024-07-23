@@ -7,8 +7,8 @@ import './styles.css';
 const App = () => (
   <Router>
     <Routes>
-      <Route exact path="/" component={Home} />
-      <Route path="/reservations" component={Reservations} />
+      <Route path="/" element={<Home />} />
+      <Route path="/reservations" element={<Reservations />} />
     </Routes>
   </Router>
 );

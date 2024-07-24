@@ -6,6 +6,7 @@ import BookingForm from './components/BookingForm';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './styles.css';
+import Contact from './components/Contact';
 
 const App = () => (
   <Router>

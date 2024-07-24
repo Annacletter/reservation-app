@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 const ReservationForm = ({ addReservation }) => {
   const [name, setName] = useState('');
@@ -7,7 +6,7 @@ const ReservationForm = ({ addReservation }) => {
   const [date, setDate] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (!name || !email || !date) {
       setError('All fields are required');
@@ -15,8 +14,7 @@ const ReservationForm = ({ addReservation }) => {
     }
     try {
       const newReservation = { name, email, date };
-      const response = await axios.post('https://jsonplaceholder.typicode.com/posts', newReservation);
-      addReservation(response.data);
+      addReservation(newReservation); // Add the reservation locally
       setName('');
       setEmail('');
       setDate('');
@@ -28,9 +26,26 @@ const ReservationForm = ({ addReservation }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" required />
-      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
-      <input type="date" value={date} onChange={(e) => setDate(e.target.value)} required />
+      <input 
+        type="text" 
+        value={name} 
+        onChange={(e) => setName(e.target.value)} 
+        placeholder="Name" 
+        required 
+      />
+      <input 
+        type="email" 
+        value={email} 
+        onChange={(e) => setEmail(e.target.value)} 
+        placeholder="Email" 
+        required 
+      />
+      <input 
+        type="date" 
+        value={date} 
+        onChange={(e) => setDate(e.target.value)} 
+        required 
+      />
       {error && <p className="error">{error}</p>}
       <button type="submit">Reserve</button>
     </form>

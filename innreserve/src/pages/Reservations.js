@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Header from '../components/Header'; // Ensure Header.js is also correctly imported
-import BookingForm from '../components/BookingForm'; // Correct import
-import Footer from '../components/Footer'; // Correct import
+import Header from '../components/Header';
+import BookingForm from '../components/BookingForm';
+import Footer from '../components/Footer';
 
 const Reservations = () => {
   const [reservations, setReservations] = useState([]);

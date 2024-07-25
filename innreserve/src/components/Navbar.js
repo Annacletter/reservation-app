@@ -9,11 +9,11 @@ const Navbar = () => {
                 <div className="brand">
                     <div className="app_navbar-right">
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/">Booking</Link></li>
-                        <li><Link to="/">contact</Link></li>
-                        <li><Link to="/">about</Link></li>
-                    </div>
-                </div>
+	                <Link className="nav-link" to="/Booking">Booking</Link>
+	    		<Link className="nav-link" to="/about">about</Link>
+	    		<Link className="nav-link" to="/contact">contact</Link>
+	                </div>
+	    </div>
             </nav>
         </div>
     );

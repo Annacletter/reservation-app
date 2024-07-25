@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from '../components/Header';
 import BookingForm from '../components/BookingForm';
+import Footer from '../components/Footer';
 
 const Reservations = () => {
   const [reservations, setReservations] = useState([]);
@@ -26,6 +27,7 @@ const Reservations = () => {
     <div>
       <Header />
       <BookingForm addReservation={addReservation} reservations={reservations} />
+	 <Footer />
     </div>
   );
 };

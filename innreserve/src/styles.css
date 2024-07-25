@@ -55,7 +55,6 @@ body {
   display: flex; /* Flexbox layout */
   align-items: center; /* Center items vertically */
 }
-}
 
 header {
   background-color: #333;

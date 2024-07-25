@@ -8,6 +8,7 @@ import './styles.css';
 import Contact from './components/Contact';
 import About from './components/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const App = () => (
   <Router>

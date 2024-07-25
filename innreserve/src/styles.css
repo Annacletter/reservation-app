@@ -55,68 +55,79 @@ body {
   display: flex; /* Flexbox layout */
   align-items: center; /* Center items vertically */
 }
-/* Footer Styles */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
 .footer-to {
   flex-shrink: 0;
-  color: #fff;
-  padding: 30px 0 15px 0;
-  background-color: #212529; /* Dark footer background */
+  color: white;
+  padding: 30px 0px 15px 0px;
+  opacity: 1;
+  background-color: rgb(33, 37, 41);
   text-align: center;
 }
 
 .footer-flex-to {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 20px;
   width: 100%;
+  justify-content: space-between;
 }
 
 .contact-flex-to {
-  width: 30%;
+width: 30%;
 }
 
 .btn-contact-to {
   display: inline-block;
   width: 150px;
-  height: 30px;
-  background-color: #007bff; /* Bootstrap primary color */
-  color: #fff;
-  text-align: center;
-  line-height: 30px; /* Vertically center text */
-  border: none;
-  border-radius: 0.25rem; /* Rounded corners */
+  height: 30px; background: blue;
   margin-top: 15px;
-  text-decoration: none; /* Remove underline */
 }
+
 
 .footer-categories-flex-to {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   margin-top: -20px;
 }
 
-.footer-cat-to h2 {
+.footer-cat-to h2{
   margin-bottom: 15px;
 }
 
 .footer-cat-to form input {
-  padding: 10px 20px;
+  padding:10px 20px ;
 }
 
 .footer-cat-to form .submit-to {
-  background-color: #007bff; /* Bootstrap primary color */
+  background: blue;
   color: #fff;
   border: none;
-  border-radius: 0.25rem; /* Rounded corners */
 }
 
-/* Contact Section Styles */
+/*contactsec2*/
 .contactsec2-to {
   background: #fff;
   margin-top: 30px;
   padding: 15px 0;
+} }
+
+.menu-flex-to {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+
 }
 
+/*contactsec3*/
 .contactsec3-to {
   background: #fff;
   margin-top: 28px;
@@ -124,29 +135,30 @@ body {
   margin-bottom: 30px;
 }
 
-.contact-profile-header-to h2 {
+.contact-profile-header-to h2{
   font-weight: 200;
 }
 
 .contact-profile-flex-to {
-  display: flex;
   width: 100%;
-}
+  display: flex; }
 
 .contact-profile-pics-to {
   width: 40%;
   height: 350px;
-  background: #007bff; /* Bootstrap primary color */
+  background: blue;
+
 }
 
 .contact-profile-form-to {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   margin-left: 20px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* Form Styles */
 form {
   display: flex;
   flex-direction: column;
@@ -154,9 +166,7 @@ form {
   padding: 1rem;
   max-width: 400px;
   margin: auto;
-}
-
-input, button {
+} input, button {
   padding: 0.5rem;
   font-size: 1rem;
 }
@@ -170,7 +180,6 @@ input:invalid {
   font-size: 0.9rem;
 }
 
-/* List Styles */
 ul {
   list-style-type: none;
   padding: 0;
@@ -185,7 +194,15 @@ li {
   border: 1px solid #ccc;
 }
 
-/* Responsive Adjustments */
+.responsive-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
 @media (max-width: 768px) {
   form {
     width: 90%;
@@ -194,4 +211,4 @@ li {
   ul {
     width: 90%;
   }
-}
+} 

@@ -11,7 +11,7 @@ body {
 }
 
 .navbar-brand {
-  color: #ffffff; /* White text color */
+  color: blue; /* blue text color */
   font-size: 1.5rem; /* Font size */
   font-weight: bold; /* Font weight */
   text-transform: uppercase; /* Uppercase text */
@@ -31,11 +31,11 @@ body {
 }
 
 .navbar-toggler {
-  border-color: #ffffff; /* White border for the toggler */
+  border-color: purple; /* Purple border for the toggler */
 }
 
 .navbar-toggler-icon {
-  background-image: url('data:image/svg+xml;base64,...'); /* Ensure this is correct */
+  background-image: url('data:image/svg+xml;base64,...');
 }
 
 /* Container for alignment */

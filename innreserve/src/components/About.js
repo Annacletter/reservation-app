@@ -10,7 +10,7 @@ const About = () => {
           <h5>Your Ultimate Reservation Solution</h5>
           <div className="fakeimg mb-3">
             <img 
-              src="./assets/vision.jpg" 
+              src="/assets/vision.jpg" 
               alt="Vision" 
               className="img-fluid" 
               style={{ width: '100%', height: '150px', objectFit: 'cover' }}
@@ -29,7 +29,7 @@ const About = () => {
           <h5>Transforming the Way You Book</h5>
           <div className="fakeimg mb-3">
             <img 
-              src="./assets/mission.jpg" 
+              src="/assets/mission.jpg" 
               alt="Vision" 
               className="img-fluid" 
               style={{ width: '100%', height: '150px', objectFit: 'cover' }}

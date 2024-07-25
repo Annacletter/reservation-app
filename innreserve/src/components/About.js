@@ -1,4 +1,6 @@
 import React from 'react';
+import visionImage from '../assets/vision.jpg';
+import missionImage from '../assets/mission.jpg';
 
 const About = () => {
   return (

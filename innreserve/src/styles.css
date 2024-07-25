@@ -64,6 +64,24 @@ header {
   font-weight: bold; /* Font weight */
 }
 
+/* Jumbotron styles */
+.jumbotron {
+  background-color: #f8f9fa; /* Light background color for the jumbotron */
+  padding: 2rem; /* Add padding inside the jumbotron */
+}
+
+/* Heading styles */
+.display-4 {
+  font-size: 3rem; /* Font size for the heading */
+  margin-bottom: 1rem; /* Space below the heading */
+}
+
+/* Paragraph styles */
+.lead {
+  font-size: 1.25rem; /* Font size for the paragraph */
+  margin: 0; /* Remove default margin */
+}
+
 .footer-to {
   flex-shrink: 0;
   color: white;

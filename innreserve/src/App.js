@@ -6,6 +6,7 @@ import BookingForm from './components/BookingForm';
 import Navbar from './components/Navbar';
 import './styles.css';
 import Contact from './components/Contact';
+import About from './components/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => (
@@ -16,6 +17,7 @@ const App = () => (
       <Route path="/reservations" element={<Reservations />} />
       <Route path="/Booking" element={<BookingForm />} />
       <Route path="/contact" element={<Contact />} />
+	<Route path="/About" element={<About />} />
     </Routes>
   </Router>
 );

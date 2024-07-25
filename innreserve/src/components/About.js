@@ -8,10 +8,16 @@ const About = () => {
         <div className="col-md-6">
           <h2>Vision</h2>
           <h5>Your Ultimate Reservation Solution</h5>
-          <div className="fakeimg mb-3" style={{ backgroundColor: '#f8f9fa', height: '150px' }}>
-            <p className="text-center">Image Placeholder</p>
+          <div className="fakeimg mb-3">
+            <img 
+              src="./assets/vision.jpg" 
+              alt="Vision" 
+              className="img-fluid" 
+              style={{ width: '100%', height: '150px', objectFit: 'cover' }}
+            />
           </div>
-          <p>
+
+	  <p>
             At InnReserve, our vision is to provide a seamless and intuitive booking experience for both hotels and restaurants. We aim to streamline the reservation process, making it easier for users to secure their stays and dining experiences with just a few clicks.
           </p>
           <p>
@@ -21,9 +27,15 @@ const About = () => {
         <div className="col-md-6">
           <h2>Mission</h2>
           <h5>Transforming the Way You Book</h5>
-          <div className="fakeimg mb-3" style={{ backgroundColor: '#f8f9fa', height: '150px' }}>
-            <p className="text-center">Image Placeholder</p>
+          <div className="fakeimg mb-3">
+            <img 
+              src="./assets/mission.jpg" 
+              alt="Vision" 
+              className="img-fluid" 
+              style={{ width: '100%', height: '150px', objectFit: 'cover' }}
+            />
           </div>
+
           <p>
             Our mission is to revolutionize the booking process for hotels and restaurants by offering a dynamic web application that caters to the modern traveler and diner. We strive to provide an efficient, reliable, and secure booking system that meets the needs of our users.
           </p>

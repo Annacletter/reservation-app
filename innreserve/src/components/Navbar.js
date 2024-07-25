@@ -1,21 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navbar = () => {
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div className="brand">
-                    <div className="app_navbar-right">
-                        <li><Link to="/">Home</Link></li>
-	                <Link className="nav-link" to="/Booking">Booking</Link>
-	    		<Link className="nav-link" to="/about">about</Link>
-	    		<Link className="nav-link" to="/contact">contact</Link>
-	                </div>
-	    </div>
-            </nav>
-        </div>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className="container">
+                <div className="navbar-brand">
+                    InnReserve
+                </div>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ml-auto">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/">Home</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/booking">Booking</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/about">About</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/contact">Contact</Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     );
 }
 

@@ -26,7 +26,6 @@ const Reservations = () => {
     <div>
       <Header />
       <BookingForm addReservation={addReservation} reservations={reservations} />
-      <Footer />
     </div>
   );
 };

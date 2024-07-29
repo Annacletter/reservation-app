@@ -11,8 +11,13 @@ InnReserve is a fully dynamic React web application that allows users to make re
 
 ## Technologies Used
 - React
-- Axios
 - JSONPlaceholder
 - HTML, CSS, JavaScript
 
 ## Installation
+## Table of Contents
+
+- ** Clone the repository** ```bash git clone https://github.com/yourusername/your-repo-name.git cd your-repo-name
+
+- ** Render Deployment** Dependencies : npm install ```Build command: npm run build , Start command : npm start
+
